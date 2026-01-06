@@ -1,0 +1,26 @@
+{
+  "name": "bondhio-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": " npx @tailwindcss/cli -i ./source/css/style.css -o ./dist/css/output.css",
+    "dev": " npx @tailwindcss/cli -i ./source/css/style.css -o ./dist/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BondarEvgen/BondHio-pages.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BondarEvgen/BondHio-pages/issues"
+  },
+  "homepage": "https://github.com/BondarEvgen/BondHio-pages#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
