@@ -29,10 +29,10 @@
             <div class="w-full pt-[22px] pb-[30px] pl-[30px]">
                 <nav>
                     <ul class="font-(--font-oswald) text-(--color-brand-gray) text-[12px] leading-none font-light tracking-widest">
-                        <li class="mb-[5px]">Gallery</li>
-                        <li class="mb-[5px]">Events</li>
-                        <li class="mb-[5px]">News</li>
-                        <li class="mb-[5px]">Contacts</li>
+                        <li class="mb-[10px]"><a href="#">Gallery</a></li>
+                        <li class="mb-[10px]"><a href="#">Events</a></li>
+                        <li class="mb-[10px]"><a href="#">News</a></li>
+                        <li class="mb-[0px]"><a href="#">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -44,7 +44,7 @@
             <!-- Slider Track -->
             <div class="flex transition-transform duration-500 ease-out" id="slider-track">
                 <!-- Slide 1 -->
-                <div class="min-w-full relative h-[600px] bg-gray-200 flex items-center justify-center">
+                <div class="min-w-full relative h-[600px] bg-(secondary) flex items-center justify-center">
                     <img src="https://picsum.photos/1200/600?random=1" alt="Slide 1" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
                          <h2 class="font-(--font-oswald) text-6xl uppercase mb-4 drop-shadow-lg">Modern Architecture</h2>
@@ -53,7 +53,7 @@
                     <div class="absolute inset-0 bg-black/20"></div>
                 </div>
                 <!-- Slide 2 -->
-                <div class="min-w-full relative h-[600px] bg-gray-300 flex items-center justify-center">
+                <div class="min-w-full relative h-[600px] bg-(--color-primary) flex items-center justify-center">
                     <img src="https://picsum.photos/1200/600?random=2" alt="Slide 2" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
                         <h2 class="font-(--font-oswald) text-6xl uppercase mb-4 drop-shadow-lg">Urban Spaces</h2>
@@ -124,15 +124,51 @@
         </div>
 
         <section id="slogan" class="w-full flex justify-center items-center">
-            <div class="w-full w-[1200px] max-w-[1170px] h-[600px] flex justify-center p-[24px]">
-                <div class="w-full flex flex-col grow justify-center items-center relative rounded-[20px] bg-gray-200">
-                    <h2 class="font-(--font-oswald) text-4xl uppercase mb-4 drop-shadow-lg">Modern Architecture</h2>
+            <div class="w-full w-[1200px] max-w-[1170px] h-[1000px] flex justify-center pt-[24px] pb-[24px]">
+                <div class="w-full flex flex-col grow justify-center items-left relative rounded-[20px] bg-(--color-primary) overflow-hidden pl-[96px]">
+                    <h2 class="font-(--font-oswald) text-6xl uppercase mb-4 drop-shadow-lg">Modern<br> Architecture</h2>
                     <p class="font-sans text-xl drop-shadow-md">Exploring the lines of the future</p>
-                    <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="absolute rounded-[20px] top-[200px] right-[10px] w-[150px] h-[250px] object-cover">
-                    <img src="https://picsum.photos/1200/600?random=4" alt="Slide 3" class="absolute rounded-[20px] top-[300px] right-[15px] w-[150px] h-[250px] object-cover">
+                    <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="absolute rounded-[20px] top-[200px] right-[-10px] w-[450px] h-[550px] object-cover z-[2]">
+                    <img src="https://picsum.photos/1200/600?random=4" alt="Slide 3" class="absolute rounded-[20px] top-[220px] right-[0px] w-[450px] h-[550px] object-cover z-[1]">
                 </div>
             </div>
             
+        </section>
+
+        <section id="benefits" class="w-full flex justify-center items-center">
+            <div class="w-full w-[1200px] max-w-[1170px] h-[1000px] flex justify-start pt-[24px] pb-[24px]">
+                <div class="w-full flex flex-col grow justify-center items-left relative rounded-[20px] bg-(--color-primary) overflow-hidden px-[48px]">
+                    <h2 class="font-(--font-oswald) text-4xl uppercase mb-4 drop-shadow-lg">Мы знаем как</h 2>
+                    <h3 class="font-(--font-oswald) text-2xl uppercase mb-4 drop-shadow-lg">сделать ваш интерьер <strong>визуально</strong></h3>
+                    <h3 class="font-(--font-oswald) text-2xl uppercase mb-4 drop-shadow-lg"><strong>более дорогим</strong></h3>
+                    <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="rounded-[20px] w-full h-[550px] object-cover">
+                    <div class="flex w-full bg-(--color-secondary) mt-[24px] rounded-[20px] p-[48px]">
+                        <p class="font-sans text-4xl text-white drop-shadow-md"> <strong>Нас вдохновляет</strong> природа и архитектура мы делаем роскошь доступной</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section id="skills" class="w-full flex justify-center items-center">
+            <div class="w-full w-[1200px] max-w-[1170px] flex justify-start pt-[24px] pb-[24px]">
+                <div class="w-full flex flex-col grow justify-center items-left relative rounded-[20px] bg-(--color-primary) overflow-hidden p-[48px]">
+                    <div class="flex flex-col bg-[#FAF8F1] mt-[24px] rounded-[20px] p-[48px]">
+                        <h2 class="font-(--font-oswald) text-3xl uppercase mb-4 drop-shadow-lg">Мы используем:</h2>
+                    
+                        <div class="flex  flex-col w-full bg-[#656465] mt-[24px] rounded-[20px] p-[48px]">
+                            <p class="font-sans text-2xl text-white leading-[30px] mb-4 drop-shadow-md uppercase"> <strong>12+ техник декоративных покрытий</strong> рельефы под скалу, битон, травертин, песчанник</p>
+                            <p class="font-sans text-2xl text-white leading-[30px] mb-4 drop-shadow-md uppercase"> 
+                                <strong>Уникальные фактуры</strong> Которые создаем вручную <br> каждая стена - одна единственная.<br>повторов не бывает
+                            </p>
+                            <p class="font-sans text-2xl text-white leading-[30px] mb-4 drop-shadow-md uppercase"> <strong>Премиальные экологичные материалы</strong> собственные рецепты и сертифицированные компоненты</p>
+                            <p class="font-sans text-2xl text-white leading-[30px] drop-shadow-md uppercase"> <strong>Сроки и ответственность</strong> природа и архитектура мы делаем роскошь доступной</p>
+                        </div>
+                    </div>
+
+
+                    <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="rounded-[20px] w-full h-[550px] object-cover">
+                </div>
+            </div> 
         </section>
     </content>
 
