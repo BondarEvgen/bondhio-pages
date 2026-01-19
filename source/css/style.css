@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+
 @theme {
     --color-primary: #faf8f1;
     --color-secondary: #656465;
+    --font-oswald: "Oswald", sans-serif;
+    --font-caveat: "Caveat", cursive;
+    --font-marck: "Marck Script", cursive;
 }
