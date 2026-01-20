@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>BOND&HIO</title>
-
-    <!-- Fonts -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bond&Hio - Diseño de Interiores</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lemon-tuesday" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/boycott" rel="stylesheet">
     <link href="dist/css/output.css" rel="stylesheet">
 
 </head>
+<body class="bg-white">
 
-<body class="w-full flex flex-col min-h-screen">
     <header class="flex w-full justify-center pt-8 md:pt-[100px]">
         <div class="w-full flex flex-col md:flex-row justify-between items-center max-w-[1170px] px-4">
             <div class="flex items-center gap-4 pt-[22px] pb-4 md:pb-[30px] border-b md:border-b-0 md:border-r-[1px] border-[#E5E7EB] md:pr-8">
@@ -34,11 +32,11 @@
                     }
                 </style>
                 <div class="flex gap-2 font-oswald text-sm md:text-base text-(--color-brand-gray) uppercase tracking-widest mr-4">
-                    <a href="index.html" class="lang-link lang-active">RU</a>
+                    <a href="index.html" class="lang-link">RU</a>
                     <span class="text-gray-300">|</span>
                     <a href="index_en.html" class="lang-link">EN</a>
                     <span class="text-gray-300">|</span>
-                    <a href="index_es.html" class="lang-link">ES</a>
+                    <a href="index_es.html" class="lang-link lang-active">ES</a>
                 </div>
 
                 <h1 class="font-oswald text-(--color-brand-dark:) text-5xl md:text-[80px] leading-none uppercase font-normal tracking-tight">
@@ -51,26 +49,27 @@
             <div class="w-full flex justify-center md:justify-start pt-4 md:pt-[22px] pb-[30px] pl-0 md:pl-[30px]">
                 <nav>
                     <ul class="font-oswald text-(--color-brand-gray) text-sm md:text-base leading-none font-light tracking-widest flex gap-4 md:block md:gap-0">
-                        <li class="mb-0 md:mb-[10px]"><a href="#benefits">Приемущества</a></li>
-                        <li class="mb-0 md:mb-[10px]"><a href="#skills">Технологии</a></li>
-                        <li class="mb-0 md:mb-[10px]"><a href="#how-we-works">Как мы работаем</a></li>
-                        <li class="mb-[0px]"><a href="#">Contacts</a></li>
+                        <li class="mb-0 md:mb-[10px]"><a href="#benefits">Ventajas</a></li>
+                        <li class="mb-0 md:mb-[10px]"><a href="#skills">Tecnologías</a></li>
+                        <li class="mb-0 md:mb-[10px]"><a href="#how-we-works">Cómo trabajar</a></li>
+                        <li class="mb-[0px]"><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <content class="w-full flex flex-col justify-center items-center py-10">
+
+    <main class="w-full flex flex-col items-center">
         <!-- Slider Container -->
-        <div class="relative w-full max-w-[1170px] h-[400px] md:h-[600px] overflow-hidden group rounded-[20px] mx-4 md:mx-0" id="slider-container">
-            <!-- Slider Track -->
-            <div class="flex transition-transform duration-500 ease-out" id="slider-track">
+        <div class="relative w-full max-w-[1170px] overflow-hidden group rounded-[20px] mx-4 md:mx-0 h-[400px] md:h-[600px]" id="slider-container">
+            <!-- Slides Wrapper -->
+            <div class="flex transition-transform duration-500 ease-out h-full" id="slider-wrapper">
                 <!-- Slide 1 -->
                 <div class="min-w-full relative h-[400px] md:h-[600px] bg-(secondary) flex items-center justify-center">
                     <img src="https://picsum.photos/1200/600?random=1" alt="Slide 1" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
-                         <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Modern Architecture</h2>
-                         <p class="font-sans text-xl drop-shadow-md">Exploring the lines of the future</p>
+                         <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Arquitectura Moderna</h2>
+                         <p class="font-sans text-xl drop-shadow-md">Explorando las líneas del futuro</p>
                     </div>
                     <div class="absolute inset-0 bg-black/20"></div>
                 </div>
@@ -78,8 +77,8 @@
                 <div class="min-w-full relative h-[400px] md:h-[600px] bg-(--color-primary) flex items-center justify-center">
                     <img src="https://picsum.photos/1200/600?random=2" alt="Slide 2" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
-                        <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Urban Spaces</h2>
-                        <p class="font-sans text-xl drop-shadow-md">Designing for the people</p>
+                        <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Espacios Urbanos</h2>
+                        <p class="font-sans text-xl drop-shadow-md">Diseñando para la gente</p>
                    </div>
                    <div class="absolute inset-0 bg-black/20"></div>
                 </div>
@@ -87,84 +86,72 @@
                 <div class="min-w-full relative h-[400px] md:h-[600px] bg-gray-400 flex items-center justify-center">
                     <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
-                        <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Interior Design</h2>
-                         <p class="font-sans text-xl drop-shadow-md">Creating comfort and style</p>
+                        <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Diseño Interior</h2>
+                         <p class="font-sans text-xl drop-shadow-md">Creando confort y estilo</p>
                    </div>
                    <div class="absolute inset-0 bg-black/20"></div>
                 </div>
-                <!-- Slide 4 -->
+                <!-- Cloned Slide 1 (for loop) -->
                 <div class="min-w-full relative h-[400px] md:h-[600px] bg-gray-200 flex items-center justify-center">
                     <img src="https://picsum.photos/1200/600?random=1" alt="Slide 1" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
-                         <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Modern Architecture</h2>
-                         <p class="font-sans text-xl drop-shadow-md">Exploring the lines of the future</p>
+                         <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Arquitectura Moderna</h2>
+                         <p class="font-sans text-xl drop-shadow-md">Explorando las líneas del futuro</p>
                     </div>
                     <div class="absolute inset-0 bg-black/20"></div>
                 </div>
-                <!-- Slide 5 -->
+                 <!-- Cloned Slide 2 (for loop) -->
                 <div class="min-w-full relative h-[400px] md:h-[600px] bg-gray-300 flex items-center justify-center">
                     <img src="https://picsum.photos/1200/600?random=2" alt="Slide 2" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
-                        <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Urban Spaces</h2>
-                        <p class="font-sans text-xl drop-shadow-md">Designing for the people</p>
+                        <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Espacios Urbanos</h2>
+                        <p class="font-sans text-xl drop-shadow-md">Diseñando para la gente</p>
                    </div>
                    <div class="absolute inset-0 bg-black/20"></div>
                 </div>
-                <!-- Slide 6 -->
+                 <!-- Cloned Slide 3 (for loop) -->
                 <div class="min-w-full relative h-[400px] md:h-[600px] bg-gray-400 flex items-center justify-center">
                     <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
-                        <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Interior Design</h2>
-                         <p class="font-sans text-xl drop-shadow-md">Creating comfort and style</p>
+                        <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Diseño Interior</h2>
+                         <p class="font-sans text-xl drop-shadow-md">Creando confort y estilo</p>
                    </div>
                    <div class="absolute inset-0 bg-black/20"></div>
                 </div>
+
             </div>
 
-            <!-- Navigation Buttons -->
-            <button id="prev-btn" class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100 focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>
+             <!-- Navigation Arrows (Hidden by request in previous steps, but keeping structure if needed later) -->
+             <button id="prev-btn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/30 p-2 rounded-full hover:bg-white/50 focus:outline-none hidden">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
             </button>
-            <button id="next-btn" class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100 focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
+            <button id="next-btn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/30 p-2 rounded-full hover:bg-white/50 focus:outline-none hidden">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </button>
 
-            <!-- Indicators -->
-            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2" id="indicators">
-                <button class="w-3 h-3 rounded-full bg-white transition-all hover:scale-125" data-slide="0"></button>
-                <button class="w-3 h-3 rounded-full bg-white/50 transition-all hover:scale-125" data-slide="1"></button>
-                <button class="w-3 h-3 rounded-full bg-white/50 transition-all hover:scale-125" data-slide="2"></button>
-                <button class="w-3 h-3 rounded-full bg-white/50 transition-all hover:scale-125" data-slide="3"></button>
-                <button class="w-3 h-3 rounded-full bg-white/50 transition-all hover:scale-125" data-slide="4"></button>
-                <button class="w-3 h-3 rounded-full bg-white/50 transition-all hover:scale-125" data-slide="5"></button>
-                <button class="w-3 h-3 rounded-full bg-white/50 transition-all hover:scale-125" data-slide="6"></button>
-            </div>
+
         </div>
 
         <section id="slogan" class="w-full flex justify-center items-center">
             <div class="w-full max-w-[1170px] flex justify-center pt-6 md:pt-[24px] pb-6 md:pb-[24px] px-4 md:px-0">
                 <div class="w-full flex flex-col grow justify-center items-start relative rounded-[20px] bg-(--color-primary) overflow-hidden p-3 md:pl-[96px] py-12 md:py-0 min-h-[400px] md:h-[600px]">
-                    <p class="font-caveat text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">мы знаем:</p>
-                    <h2 class="font-oswald text-3xl md:text-6xl uppercase mb-4 drop-shadow-lg relative z-10">СТЕНАМ<br>МОЖНО<br>ПРИДАТЬ<br>ДУШУ</h2>
+                    <p class="font-lemon text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">sabemos:</p>
+                    <h2 class="font-oswald text-3xl md:text-6xl uppercase mb-4 drop-shadow-lg relative z-10">LAS PAREDES<br>PUEDEN<br>TENER<br>ALMA</h2>
                     <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="hidden md:block absolute rounded-[20px] top-[50px] md:top-[200px] right-[-10px] w-[300px] md:w-[450px] h-[400px] md:h-[550px] object-cover z-[2]">
                     <img src="https://picsum.photos/1200/600?random=4" alt="Slide 3" class="hidden md:block absolute rounded-[20px] top-[70px] md:top-[220px] right-[0px] w-[300px] md:w-[450px] h-[400px] md:h-[550px] object-cover z-[1]">
                 </div>
-            </div>    
+            </div>
         </section>
 
         <section id="benefits" class="w-full flex justify-center items-center">
             <div class="w-full max-w-[1170px] flex justify-start pt-6 md:pt-[24px] pb-6 md:pb-[24px] px-4 md:px-0">
                 <div class="w-full flex flex-col grow justify-center items-start relative rounded-[20px] bg-(--color-primary) overflow-hidden p-3 md:px-[48px] md:py-[48px]">
-                    <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">Мы знаем как</h 2>
-                    <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4 drop-shadow-lg">сделать ваш интерьер <strong>визуально</strong></h3>
-                    <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4 drop-shadow-lg"><strong>более дорогим</strong></h3>
+                    <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">Sabemos cómo</h 2>
+                    <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4 drop-shadow-lg">elevar visualmente <strong>el valor</strong></h3>
+                    <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4 drop-shadow-lg"><strong>de un interior</strong></h3>
                     <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="rounded-[20px] w-full h-[300px] md:h-[550px] object-cover">
                     <div class="flex w-full bg-(--color-secondary) mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
-                        <p class="font-sans text-base md:text-xl text-white drop-shadow-md"> <strong>Нас вдохновляет</strong> природа и архитектура мы делаем роскошь доступной</p>
+                        <p class="font-sans text-base md:text-xl text-white drop-shadow-md"> <strong>La naturaleza</strong> y la arquitectura nos inspiran, hacemos que el lujo sea accesible</p>
                     </div>
                 </div>
             </div> 
@@ -174,32 +161,26 @@
             <div class="w-full max-w-[1170px] flex justify-start pt-6 md:pt-[24px] pb-6 md:pb-[24px] px-4 md:px-0">
                 <div class="w-full flex flex-col grow justify-center items-start relative rounded-[20px] bg-(--color-primary) overflow-hidden p-3 md:p-[48px]">
                     <div class="flex flex-col bg-[#FAF8F1] mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
-                        <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">Мы используем:</h2>
+                        <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">Utilizamos:</h2>
                     
                         <div class="flex flex-col w-full bg-(--color-secondary) mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
-                            <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase"> <strong>12+ техник декоративных покрытий</strong> рельефы под скалу, битон, травертин, песчанник</p>
+                            <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase"> <strong>Más de 12 técnicas de acabados decorativos</strong> relieves efecto roca, hormigón, travertino y arenisca.</p>
                             <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase"> 
-                                <strong>Уникальные фактуры</strong> Которые создаем вручную <br> каждая стена - одна единственная.<br>повторов не бывает
+                                <strong>Texturas únicas creadas a mano</strong>. <br> Cada pared es una pieza única.<br>No hay repeticiones.
                             </p>
-                            <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase"> <strong>Премиальные экологичные материалы</strong> собственные рецепты и сертифицированные компоненты</p>
-                            <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] drop-shadow-md uppercase"> <strong>Сроки и ответственность</strong> природа и архитектура мы делаем роскошь доступной</p>
+                            <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase"> <strong>Materiales premium y ecológicos</strong>. Recetas propias y componentes certificados.</p>
+                            <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] drop-shadow-md uppercase"> <strong>Plazos y responsabilidad</strong>. La naturaleza y la arquitectura nos inspiran, hacemos que el lujo sea accesible.</p>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-2 md:grid-cols-4 w-full rounded-[20px] overflow-hidden mt-6 md:mt-0">
-                        <img src="https://picsum.photos/1200/600?random=1" alt="Slide 1" class="w-full h-[200px] md:h-[550px] object-cover">
-                        <img src="https://picsum.photos/1200/600?random=2" alt="Slide 2" class="w-full h-[200px] md:h-[550px] object-cover">
-                        <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="w-full h-[200px] md:h-[550px] object-cover">
-                        <img src="https://picsum.photos/1200/600?random=4" alt="Slide 4" class="w-full h-[200px] md:h-[550px] object-cover">
-                    </div>
                 </div>
-            </div> 
+            </div>
         </section>
         <section id="accents" class="w-full flex justify-center items-center">
             <div class="w-full max-w-[1170px] flex justify-start pt-6 md:pt-[24px] pb-6 md:pb-[24px] px-4 md:px-0">
                 <div class="w-full flex flex-col grow justify-center items-start relative rounded-[20px] bg-(--color-primary) overflow-hidden p-3 md:p-[48px]">
                     <div class="flex flex-col bg-[#FAF8F1] mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
-                        <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">АКЦЕНТНЫЕ СТЕНЫ</h2>
+                        <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">PAREDES DE ACENTO</h2>
                         <div class="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] grid-rows-2 w-full rounded-[20px] overflow-hidden">
                             <div class="row-span-1 md:row-span-2">
                                 <img src="https://picsum.photos/1200/600?random=1" alt="Slide 3" class="w-full md:h-full object-cover">
@@ -214,18 +195,19 @@
                     
                         <div class="flex flex-col w-full bg-(--color-secondary) mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
                             <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase">
-                                <strong>МЫ ПРЕДЛАГАЕМ ЯРКИЙ И ЭКСКЛЮЗИВНЫЙ ПРИЕМ</strong>С АКЦЕНТНОЙ СТЕНОЙ - ИМИТАЦИЯ ТЕКСТУРЫ И
-ФАКТУРЫ НАТУРАЛЬНОГО КАМНЯ РАЗНЫХ ПОРОД</p>
+                                <strong>OFRECEMOS UNA SOLUCIÓN BRILLANTE Y EXCLUSIVA</strong>CON UNA PARED DE ACENTO - IMITACIÓN DE TEXTURA Y
+FACTURA DE PIEDRA NATURAL DE DIFERENTES TIPOS</p>
                         </div>
                     </div>
+
                 </div>
-            </div> 
+            </div>
         </section>
         <section id="decorative-plasters" class="w-full flex justify-center items-center">
             <div class="w-full max-w-[1170px] flex justify-start pt-6 md:pt-[24px] pb-6 md:pb-[24px] px-4 md:px-0">
                 <div class="w-full flex flex-col grow justify-center items-start relative rounded-[20px] bg-(--color-primary) overflow-hidden p-3 md:p-[48px]">
                     <div class="flex flex-col bg-[#FAF8F1] mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
-                        <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">ДЕКОРАТИВНЫЕ ШТУКАТУРКИ</h2>
+                        <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">REVESTIMIENTOS DECORATIVOS</h2>
                         <div class="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] grid-rows-2 w-full rounded-[20px] overflow-hidden">
                             <div class="row-span-1 md:row-span-2">
                                 <img src="https://picsum.photos/1200/600?random=1" alt="Slide 3" class="w-full md:h-full object-cover">
@@ -240,23 +222,24 @@
                     
                         <div class="flex  flex-col w-full bg-(--color-secondary) mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
                             <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase">
-                                <strong>ДЕКОРАТИВНАЯ ШТУКАТУРКА </strong>- ЭТО НЕ ТОЛЬКО ПРО
-                                    КРАСИВО И РОСКОШНО. С ЕЕ ПОМОЩЬЮ МОЖНО СКРЫТЬ
-                                    НЕДОСТАТКИ, ПОВРЕЖДЕНИЯ, А ТАКЖЕ НЕСОВЕРШЕНСТВА
-                                    ИМЕЮЩИХСЯ СТЕН. ТАКИМ ОБРАЗОМ <strong>ЧАСТО УДАЕТСЯ
-                                    СЭКОНОМИТЬ НА ПОДГОТОВИТЕЛЬНЫХ РАБОТАХ</strong>
+                                <strong>EL REVESTIMIENTO DECORATIVO </strong>- NO SE TRATA SOLO DE
+                                    BELLEZA Y LUJO. CON SU AYUDA PUEDEN OCULTARSE
+                                    DEFECTOS, DAÑOS, E IMPERFECCIONES DE LAS
+                                    PAREDES EXISTENTES. ASÍ <strong>A MENUDO SE LOGRA
+                                    AHORRAR EN TRABAJOS MANUALES</strong>
                             </p>
                         </div>
                     </div>
+
                 </div>
-            </div> 
+            </div>
         </section>
 
         <section id="microcement" class="w-full flex justify-center items-center">
             <div class="w-full max-w-[1170px] flex justify-start pt-6 md:pt-[24px] pb-6 md:pb-[24px] px-4 md:px-0">
                 <div class="w-full flex flex-col grow justify-center items-start relative rounded-[20px] bg-(--color-primary) overflow-hidden p-3 md:p-[48px]">
                     <div class="flex flex-col bg-[#FAF8F1] mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
-                        <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">МИКРОЦЕМЕНТ</h2>
+                        <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">MICROCEMENTO</h2>
                     
                         <div class="grid grid-cols-1 md:grid-cols-3 w-full rounded-[20px] overflow-hidden">
                             <img src="https://picsum.photos/1200/600?random=1" alt="Slide 1" class="w-full h-[200px] md:h-[550px] object-cover">
@@ -267,71 +250,67 @@
                             <div class="flex flex-col md:flex-row gap-4 mb-4 items-start">
                                 <img src="https://picsum.photos/1200/600?random=4" alt="Slide 3" class="w-full md:w-[150px] h-[150px] object-cover rounded-[10px]">
                                 <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] drop-shadow-md uppercase"> 
-                                    <strong>МИКРОЦЕМЕНТ </strong>— ЭТО РЕШЕНИЕ, РАЗРАБОТАННОЕ
-                                        СПЕЦИАЛЬНО ДЛЯ ВНУТРЕННИХ ПОВЕРХНОСТЕЙ,
-                                        ОБЕСПЕЧИВАЮЩЕЕ <strong>ВЫСОКОПРОЧНОЕ ПОКРЫТИЕ</strong>
-                                        ДЛЯ ПОЛОВ, ПОТОЛКОВ И СТЕН.
+                                    <strong>MICROCEMENTO </strong>— ES UNA SOLUCIÓN DISEÑADA
+                                        ESPECIALMENTE PARA SUPERFICIES INTERIORES,
+                                        QUE PROPORCIONA <strong>UN RECUBRIMIENTO DE ALTA RESISTENCIA</strong>
+                                        PARA SUELOS, TECHOS Y PAREDES.
                                 </p>
                             </div>
                             <div class="flex flex-col md:flex-row gap-4 items-start">
                                 <img src="https://picsum.photos/1200/600?random=5" alt="Slide 3" class="w-full md:w-[150px] h-[150px] object-cover rounded-[10px]">
                                 <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase">
-                                    В БОЛЬШИНСТВЕ СЛУЧАЕВ МЫ ПРЕДЛАГАЕМ
-                                    ИСПОЛЬЗОВАТЬ МИКРОЦЕМЕНТ В ВАННЫХ
-                                    КОМНАТАХ 
-                                    <strong>ВМЕСТО ТРАДИЦИОННОЙ ПЛИТКИ.</strong>
-                                    ЭТО
-                                    ПРОЧНОЕ, ВОДО- И ИЗНОСОСТОЙКОЕ ПОКРЫТИЕ.
-                                    А ЕЩЕ ВЫ ЭКОНОМИТЕ ДЕНЬГИ НА ДЕМОНТАЖЕ
-                                    СТАРОЙ ПЛИТКИ
+                                    EN LA MAYORÍA DE LOS CASOS PROPONEMOS
+                                    USAR MICROCEMENTO EN BAÑOS
+                                    <strong>EN LUGAR DE LOS AZULEJOS TRADICIONALES.</strong>
+                                    ES UN
+                                    RECUBRIMIENTO FUERTE, RESISTENTE AL AGUA Y AL DESGASTE.
+                                    Y ADEMÁS AHORRAS DINERO EN EL DESMONTAJE
+                                    DE LOS AZULEJOS ANTIGUOS
                                 </p>
                             </div>
                         </div>
                     </div>
 
                 </div>
-            </div> 
+            </div>
         </section>
 
         <section id="how-we-works" class="w-full flex justify-center items-center">
             <div class="w-full w-[1200px] max-w-[1170px] flex justify-start p-[24px]">
                 <div class="w-full flex flex-col grow justify-center items-left relative rounded-[20px] bg-(--color-primary) overflow-hidden p-[24px] md:p-[48px]">
                     <div class="flex flex-col bg-[#FAF8F1] mt-[24px] rounded-[20px] md:p-[48px]">
+                        <h2 class="font-oswald text-3xl uppercase mb-4 drop-shadow-lg"><strong>REVESTIMIENTOS DECORATIVOS</strong><h2>
                         <div class="grid md:grid-cols-[1fr_1fr] gap-4 greed-rows-2 w-full h-full md:h-[800px]">
                             <div class="md:row-span-2">
                                 <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="w-full h-full rounded-[20px] object-cover">
                             </div>
                             <div class="md:row-span-2">
-                                <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg"><strong>КАК МЫ РАБОТАЕМ:</strong></h2>
+                                <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg"><strong>CÓMO TRABAJAMOS:</strong></h2>
                                 <p class="font-sans text-base md:text-xl text-black leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase">
-                                    <strong>ШАГ 1. БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ И ЗАМЕР.</strong>
-                                    ОПРЕДЕЛЯЕМ ЗАДАЧУ, ПОДБИРАЕМ СТИЛЬ, ОБСУЖДАЕМ ТЕХНОЛОГИИ
+                                    <strong>PASO 1. CONSULTA GRATUITA Y MEDICIÓN.</strong>
+                                    DEFINIMOS LA TAREA, ELEGIMOS EL ESTILO Y DISCUTIMOS TECNOLOGÍAS
                                 </p>
                                 <p class="font-sans text-base md:text-xl text-black leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase">
-                                    <strong>ШАГ 2. СМЕТА И ПЛАНИРОВАНИЕ РАБОТ.</strong>
-                                    ФИКСИРУЕМ СТОИМОСТЬ,
-                                    СРОКИ, ЭТАПЫ
+                                    <strong>PASO 2. PRESUPUESTO Y PLANIFICACIÓN DE OBRAS.</strong>
+                                    FIJAMOS PRECIO,
+                                    PLAZOS, ETAPAS
                                 </p>
                                 <p class="font-sans text-base md:text-xl text-black leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase">
-                                    <strong>ШАГ 3. СОЗДАНИЕ ОБРАЗЦОВ И МАТЕРИАЛОВ.</strong>
-                                    ВЫ САМИ ВИДИТЕ И ТРОГАЕТЕ
-                                    БУДУЩУЮ ФАКТУРУ
+                                    <strong>PASO 3. CREACIÓN DE MUESTRAS Y MATERIALES.</strong>
+                                    TÚ MISMO VES Y TOCAS
+                                    LA FUTURA TEXTURA
                                 </p>
                                 <p class="font-sans text-base md:text-xl text-black leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase">
-                                    <strong>ШАГ 4. ИСПОЛНЕНИЕ И КОНТРОЛЬ КАЧЕСТВА.</strong>
-                                    РАБОТАЕМ АККУРАТНО, ЧИСТО,
-                                    ПРОФЕССИОНАЛЬНО
+                                    <strong>PASO 4. EJECUCIÓN Y CONTROL DE CALIDAD.</strong>
+                                    TRABAJAMOS CON CUIDADO, LIMPIEZA,
+                                    PROFESIONALIDAD
                                 </p>
                             </div>
                         </div>
-                        <div class="flex  flex-col w-full bg-(--color-secondary) mt-[24px] rounded-[20px] p-[48px]">
-                            <p class="font-sans text-2xl text-white leading-[30px] mb-4 drop-shadow-md uppercase">
-                                МЫ ГОТОВЫ ВОПЛОТИТЬ В ЖИЗНЬ ВАШИ САМЫЕ СМЕЛЫЕ ИДЕИ
-                            </p>
-                        </div>
                     </div>
+
                 </div>
-            </div> 
+            </div>
         </section>
 
         <section id="working-in" class="w-full flex justify-center items-center">
@@ -344,59 +323,47 @@
                             </div>
                             <div class="row-span-1 md:row-span-2 flex flex-col justify-center items-start text-start">
                                 <p class="font-sans text-base md:text-xl text-black leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase">
-                                    РАБОТАЕМ В:
+                                    TRABAJAMOS EN:
                                     <strong>
                                         <br>
-                                        АСТУРИАС,
-                                        <br>
-                                        ГАЛИСИИ,
-                                        <br>
-                                        КАНТАБРИИ,
-                                        <br>
-                                        СТРАНЕ БАСКОВ
+                                        ASTURIAS, GALICIA, CANTABRIA,
+                                        PAÍS VASCO
                                     </strong>
                                 </p>
                             </div>
                         </div>
                         <div class="flex flex-col w-full bg-(--color-secondary) mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
                             <form action="" class="flex flex-col items-center w-full">
-                                <input type="text" placeholder="Имя" class="w-full h-[48px] rounded-[20px] p-[12px] mb-4 md:mb-[24px] bg-white">
-                                <input type="text" placeholder="Телефон" class="w-full h-[48px] rounded-[20px] p-[12px] mb-4 md:mb-[24px] bg-white">
-                                <input type="text" placeholder="Email" class="w-full h-[48px] rounded-[20px] p-[12px] mb-4 md:mb-[24px] bg-white">
-                                <textarea name="" id="" placeholder="Сообщение" class="w-full h-[120px] md:h-[48px] rounded-[20px] p-[12px] mb-4 md:mb-[24px] bg-white"></textarea>
-                                <button type="submit" class="w-full md:w-[200px] h-[48px] rounded-[20px] p-[12px] mb-0 md:mb-[24px] bg-white cursor-pointer hover:bg-gray-100 transition">Оставить заявку</button>
+                                <input type="text" placeholder="Nombre" class="w-full h-[48px] rounded-[20px] p-[12px] mb-4 md:mb-[24px] bg-white">
+                                <input type="text" placeholder="Teléfono" class="w-full h-[48px] rounded-[20px] p-[12px] mb-4 md:mb-[24px] bg-white">
+                                <button class="w-full h-[48px] bg-(--color-primary) rounded-[20px] font-oswald text-xl uppercase hover:bg-white/50 transition">Enviar</button>
                             </form>
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </section>
-    </content>
 
-    <!-- Slider Script -->  
-    <script src="source/js/slider.js"></script>
-    <footer class="w-full flex justify-center bg-(--color-secondary) text-white mt-[48px] py-[48px]">
-        <div class="w-full max-w-[1170px] px-6 md:px-[48px]">
-            <!-- Grid -->
+        <div class="w-full bg-black/90 py-12 px-6 md:px-[48px] text-white">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <!-- Brand -->
                 <div>
                      <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4">Bond&Hio</h2>
-                     <p class="font-sans text-sm md:text-base text-gray-300">Роскошные интерьеры через современные технологии и природные материалы.</p>
+                     <p class="font-sans text-sm md:text-base text-gray-300">Interiores de lujo mediante tecnologías modernas y materiales naturales.</p>
                 </div>
                 <!-- Links -->
                 <div>
-                    <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4">Меню</h3>
+                    <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4">Menú</h3>
                     <ul class="space-y-2 font-sans text-gray-300 text-sm md:text-base">
-                        <li><a href="#" class="hover:text-white transition">Главная</a></li>
-                        <li><a href="#benefits" class="hover:text-white transition">Преимущества</a></li>
-                        <li><a href="#skills" class="hover:text-white transition">Технологии</a></li>
-                        <li><a href="#how-we-work" class="hover:text-white transition">Как мы работаем</a></li>
+                        <li><a href="#" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="#benefits" class="hover:text-white transition">Ventajas</a></li>
+                        <li><a href="#skills" class="hover:text-white transition">Tecnologías</a></li>
+                        <li><a href="#how-we-work" class="hover:text-white transition">Cómo trabajamos</a></li>
                     </ul>
                 </div>
                 <!-- Contact -->
                 <div>
-                     <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4">Контакты</h3>
+                     <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4">Contacto</h3>
                      <ul class="space-y-2 font-sans text-gray-300 text-sm md:text-base">
                         <li>+34 651 18 28 52</li>
                         <li>bondandhio@gmail.com</li>
@@ -405,7 +372,7 @@
                 </div>
                 <!-- Socials -->
                 <div>
-                    <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4">Мы в соцсетях</h3>
+                    <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4">Redes Sociales</h3>
                     <div class="flex space-x-4">
                         <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition font-sans">Fb</a>
                         <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition font-sans">ln</a>
@@ -415,10 +382,38 @@
             </div>
             <!-- Copyright -->
             <div class="border-t border-white/20 pt-8 text-center font-sans text-sm md:text-base text-gray-400">
-                &copy; 2026 BondHio. Все права защищены.
+                &copy; 2026 Bond&Hio. Todos los derechos reservados.
             </div>
         </div>
-    </footer>
-</body>
 
+    </main>
+    <script>
+        const sliderWrapper = document.getElementById('slider-wrapper');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        // Check if elements exist (in case I commented them out)
+        if (sliderWrapper) {
+            let currentIndex = 0;
+            const slides = sliderWrapper.children;
+            const totalSlides = slides.length;
+
+            // Since it's a loop with cloned slides, effective slides are total / 2
+            const effectiveSlides = totalSlides / 2;
+
+            function updateSlider() {
+                // For simplicity, just translate full width * index
+                // Note: This logic might need refinement for seamless infinite loop if requested,
+                // but the prompt is about languages now. I'll keep the basic auto-scroll behavior.
+                sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            // Simple auto-play
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % effectiveSlides; // Cycle through first set
+                 updateSlider();
+            }, 3000);
+        }
+    </script>
+</body>
 </html>
