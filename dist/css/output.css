@@ -11,6 +11,7 @@
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -18,6 +19,8 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
@@ -278,11 +281,17 @@
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
   .mt-\[24px\] {
     margin-top: 24px;
   }
   .mt-\[48px\] {
     margin-top: 48px;
+  }
+  .mt-auto {
+    margin-top: auto;
   }
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
@@ -290,8 +299,14 @@
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
@@ -361,6 +376,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[600px\] {
+    max-width: 600px;
   }
   .max-w-\[1170px\] {
     max-width: 1170px;
@@ -454,6 +472,10 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -501,6 +523,9 @@
   .bg-gray-400 {
     background-color: var(--color-gray-400);
   }
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -531,6 +556,12 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
   .p-\[12px\] {
     padding: 12px;
   }
@@ -545,6 +576,9 @@
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
@@ -614,6 +648,10 @@
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -661,6 +699,9 @@
   }
   .text-gray-400 {
     color: var(--color-gray-400);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
   }
   .text-white {
     color: var(--color-white);
