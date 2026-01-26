@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <link href="dist/css/output.css" rel="stylesheet">
 
 </head>
-<body class="bg-white">
+<body class="w-full flex flex-col min-h-screen bg-white">
 
     <header class="flex w-full justify-center pt-8 md:pt-[100px]">
         <div class="w-full flex flex-col md:flex-row justify-between items-center max-w-[1170px] px-4">
@@ -52,21 +52,21 @@
                         <li class="mb-0 md:mb-[10px]"><a href="#benefits">Benefits</a></li>
                         <li class="mb-0 md:mb-[10px]"><a href="#skills">Technologies</a></li>
                         <li class="mb-0 md:mb-[10px]"><a href="#how-we-works">How we work</a></li>
-                        <li class="mb-[0px]"><a href="#">Contacts</a></li>
+                        <li class="mb-[0px]"><a href="#footer">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <main class="w-full flex flex-col items-center">
+    <content class="w-full flex flex-col justify-center items-center py-10">
         <!-- Slider Container -->
         <div class="relative w-full max-w-[1170px] overflow-hidden group rounded-[20px] mx-4 md:mx-0 h-[400px] md:h-[600px]" id="slider-container">
             <!-- Slides Wrapper -->
-            <div class="flex transition-transform duration-500 ease-out h-full" id="slider-wrapper">
+            <div class="flex transition-transform duration-500 ease-out h-full" id="slider-track">
                 <!-- Slide 1 -->
                 <div class="min-w-full relative h-[400px] md:h-[600px] bg-(secondary) flex items-center justify-center">
-                    <img src="https://picsum.photos/1200/600?random=1" alt="Slide 1" class="absolute w-full h-full object-cover">
+                    <img src="source/assets/1000_lines.jpg" alt="Slide 1" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
                          <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Modern Architecture</h2>
                          <p class="font-sans text-xl drop-shadow-md">Exploring the lines of the future</p>
@@ -75,7 +75,7 @@
                 </div>
                 <!-- Slide 2 -->
                 <div class="min-w-full relative h-[400px] md:h-[600px] bg-(--color-primary) flex items-center justify-center">
-                    <img src="https://picsum.photos/1200/600?random=2" alt="Slide 2" class="absolute w-full h-full object-cover">
+                    <img src="source/assets/5-1.jpg" alt="Slide 2" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
                         <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Urban Spaces</h2>
                         <p class="font-sans text-xl drop-shadow-md">Designing for the people</p>
@@ -84,7 +84,7 @@
                 </div>
                 <!-- Slide 3 -->
                 <div class="min-w-full relative h-[400px] md:h-[600px] bg-gray-400 flex items-center justify-center">
-                    <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="absolute w-full h-full object-cover">
+                    <img src="source/assets/6-1.jpg" alt="Slide 3" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
                         <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Interior Design</h2>
                          <p class="font-sans text-xl drop-shadow-md">Creating comfort and style</p>
@@ -93,7 +93,7 @@
                 </div>
                  <!-- Cloned Slide 1 (for loop) -->
                 <div class="min-w-full relative h-[400px] md:h-[600px] bg-gray-200 flex items-center justify-center">
-                    <img src="https://picsum.photos/1200/600?random=1" alt="Slide 1" class="absolute w-full h-full object-cover">
+                    <img src="source/assets/1000_lines.jpg" alt="Slide 1" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
                          <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Modern Architecture</h2>
                          <p class="font-sans text-xl drop-shadow-md">Exploring the lines of the future</p>
@@ -102,7 +102,7 @@
                 </div>
                  <!-- Cloned Slide 2 (for loop) -->
                 <div class="min-w-full relative h-[400px] md:h-[600px] bg-gray-300 flex items-center justify-center">
-                    <img src="https://picsum.photos/1200/600?random=2" alt="Slide 2" class="absolute w-full h-full object-cover">
+                    <img src="source/assets/5-1.jpg" alt="Slide 2" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
                         <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Urban Spaces</h2>
                         <p class="font-sans text-xl drop-shadow-md">Designing for the people</p>
@@ -111,7 +111,7 @@
                 </div>
                  <!-- Cloned Slide 3 (for loop) -->
                 <div class="min-w-full relative h-[400px] md:h-[600px] bg-gray-400 flex items-center justify-center">
-                    <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="absolute w-full h-full object-cover">
+                    <img src="source/assets/6-1.jpg" alt="Slide 3" class="absolute w-full h-full object-cover">
                     <div class="absolute bottom-20 left-10 text-white z-10">
                         <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-4 drop-shadow-lg">Interior Design</h2>
                          <p class="font-sans text-xl drop-shadow-md">Creating comfort and style</p>
@@ -122,22 +122,30 @@
             </div>
 
              <!-- Navigation Arrows (Hidden by request in previous steps, but keeping structure if needed later) -->
-             <button id="prev-btn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/30 p-2 rounded-full hover:bg-white/50 focus:outline-none hidden">
+             <button id="prev-btn" class="absolute top-1/2 left-4 transform -translate-y-1/2 transition-all bg-white/30 p-2 rounded-full hover:bg-white/50 focus:outline-none opacity-0 group-hover:opacity-100 cursor-pointer">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
             </button>
-            <button id="next-btn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/30 p-2 rounded-full hover:bg-white/50 focus:outline-none hidden">
+            <button id="next-btn" class="absolute top-1/2 right-4 transform -translate-y-1/2 transition-all bg-white/30 p-2 rounded-full hover:bg-white/50 focus:outline-none opacity-0 group-hover:opacity-100 cursor-pointer">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </button>
 
+            <!-- Indicators -->
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2" id="indicators">
+                <button class="w-3 h-3 rounded-full bg-white transition-all hover:scale-125" data-slide="0"></button>
+                <button class="w-3 h-3 rounded-full bg-white/50 transition-all hover:scale-125" data-slide="1"></button>
+                <button class="w-3 h-3 rounded-full bg-white/50 transition-all hover:scale-125" data-slide="2"></button>
+                <button class="w-3 h-3 rounded-full bg-white/50 transition-all hover:scale-125" data-slide="3"></button>
+                <button class="w-3 h-3 rounded-full bg-white/50 transition-all hover:scale-125" data-slide="4"></button>
+            </div>
 
         </div>
 
         <section id="slogan" class="w-full flex justify-center items-center">
             <div class="w-full max-w-[1170px] flex justify-center pt-6 md:pt-[24px] pb-6 md:pb-[24px] px-4 md:px-0">
-                <div class="w-full flex flex-col grow justify-center items-start relative rounded-[20px] bg-(--color-primary) overflow-hidden p-3 md:pl-[96px] py-12 md:py-0 min-h-[400px] md:h-[600px]">
+                <div class="w-full flex flex-col grow justify-center items-start relative rounded-[20px] bg-(--color-primary) overflow-hidden p-3 md:pl-[96px] py-12 md:py-0 min-h-[400px] md:min-h-[900px]">
                     <p class="font-lemon text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">we know:</p>
                     <h2 class="font-oswald text-3xl md:text-6xl uppercase mb-4 drop-shadow-lg relative z-10">WALLS<br>CAN<br>HAVE<br>A SOUL</h2>
-                    <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="hidden md:block absolute rounded-[20px] top-[50px] md:top-[200px] right-[-10px] w-[300px] md:w-[450px] h-[400px] md:h-[550px] object-cover z-[2]">
+                    <img src="source/assets/1-2.jpg" alt="Slide 3" class="hidden md:block absolute rounded-[20px] top-[50px] md:top-[200px] right-[-10px] w-[300px] md:w-[450px] h-[400px] md:h-[550px] object-cover z-[2]">
                     <img src="https://picsum.photos/1200/600?random=4" alt="Slide 3" class="hidden md:block absolute rounded-[20px] top-[70px] md:top-[220px] right-[0px] w-[300px] md:w-[450px] h-[400px] md:h-[550px] object-cover z-[1]">
                 </div>
             </div>
@@ -149,7 +157,7 @@
                     <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">We know how</h 2>
                     <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4 drop-shadow-lg">to make your interior <strong>visually</strong></h3>
                     <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4 drop-shadow-lg"><strong>more premium</strong></h3>
-                    <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="rounded-[20px] w-full h-[300px] md:h-[550px] object-cover">
+                    <img src="source/assets/2-3.jpg" alt="Slide 3" class="rounded-[20px] w-full h-[300px] md:h-[550px] object-cover">
                     <div class="flex w-full bg-(--color-secondary) mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
                         <p class="font-sans text-base md:text-xl text-white drop-shadow-md"> <strong>We are inspired</strong> by nature and architecture, making luxury accessible</p>
                     </div>
@@ -181,15 +189,15 @@
                 <div class="w-full flex flex-col grow justify-center items-start relative rounded-[20px] bg-(--color-primary) overflow-hidden p-3 md:p-[48px]">
                     <div class="flex flex-col bg-[#FAF8F1] mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
                         <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">ACCENT WALLS</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] grid-rows-2 w-full rounded-[20px] overflow-hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] grid-rows-2 w-full md:h-[400px] rounded-[20px] overflow-hidden">
                             <div class="row-span-1 md:row-span-2">
-                                <img src="https://picsum.photos/1200/600?random=1" alt="Slide 3" class="w-full md:h-full object-cover">
+                                <img src="source/assets/5-1.jpg" alt="Slide 3" class="w-full md:h-full object-cover">
                             </div>
                             <div>
-                                <img src="https://picsum.photos/1200/600?random=2" alt="Slide 3" class="w-full md:h-full object-cover">
+                                <img src="source/assets/4-1.jpg" alt="Slide 3" class="w-full md:h-full object-cover">
                             </div>
                             <div>
-                                <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="w-full md:h-full object-cover">
+                                <img src="source/assets/1-1.jpg" alt="Slide 3" class="w-full md:h-full object-cover">
                             </div>
                         </div>
                     
@@ -208,15 +216,15 @@ NATURAL STONE BILL OF DIFFERENT TYPES</p>
                 <div class="w-full flex flex-col grow justify-center items-start relative rounded-[20px] bg-(--color-primary) overflow-hidden p-3 md:p-[48px]">
                     <div class="flex flex-col bg-[#FAF8F1] mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
                         <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg">DECORATIVE PLASTERS</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] grid-rows-2 w-full rounded-[20px] overflow-hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] grid-rows-2 w-full md:h-[400px] rounded-[20px] overflow-hidden">
                             <div class="row-span-1 md:row-span-2">
-                                <img src="https://picsum.photos/1200/600?random=1" alt="Slide 3" class="w-full md:h-full object-cover">
+                                <img src="source/assets/6-2.jpg" alt="Slide 3" class="w-full md:h-full object-cover">
                             </div>
                             <div>
-                                <img src="https://picsum.photos/1200/600?random=2" alt="Slide 3" class="w-full md:h-full object-cover">
+                                <img src="source/assets/1000_lines.jpg" alt="Slide 3" class="w-full md:h-full object-cover">
                             </div>
                             <div>
-                                <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="w-full md:h-full object-cover">
+                                <img src="source/assets/7-1.jpg" alt="Slide 3" class="w-full md:h-full object-cover">
                             </div>
                         </div>
                     
@@ -248,7 +256,7 @@ NATURAL STONE BILL OF DIFFERENT TYPES</p>
                         </div>
                         <div class="flex  flex-col w-full bg-(--color-secondary) mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
                             <div class="flex flex-col md:flex-row gap-4 mb-4 items-start">
-                                <img src="https://picsum.photos/1200/600?random=4" alt="Slide 3" class="w-full md:w-[150px] h-[150px] object-cover rounded-[10px]">
+                                <img src="source/assets/9-1.jpg" alt="Slide 3" class="w-full md:w-[150px] h-[150px] object-cover rounded-[10px]">
                                 <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] drop-shadow-md uppercase"> 
                                     <strong>MICROCEMENT </strong>— IS A SOLUTION DESIGNED
                                         ESPECIALLY FOR INTERIOR SURFACES,
@@ -257,7 +265,7 @@ NATURAL STONE BILL OF DIFFERENT TYPES</p>
                                 </p>
                             </div>
                             <div class="flex flex-col md:flex-row gap-4 items-start">
-                                <img src="https://picsum.photos/1200/600?random=5" alt="Slide 3" class="w-full md:w-[150px] h-[150px] object-cover rounded-[10px]">
+                                <img src="source/assets/9-2.jpg" alt="Slide 3" class="w-full md:w-[150px] h-[150px] object-cover rounded-[10px]">
                                 <p class="font-sans text-base md:text-xl text-white leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase">
                                     IN MOST CASES WE PROPOSE
                                     USING MICROCEMENT IN BATHROOMS
@@ -282,7 +290,7 @@ NATURAL STONE BILL OF DIFFERENT TYPES</p>
                         <h2 class="font-oswald text-3xl uppercase mb-4 drop-shadow-lg"><strong>DECORATIVE PLASTERS</strong><h2>
                         <div class="grid md:grid-cols-[1fr_1fr] gap-4 greed-rows-2 w-full h-full md:h-[800px]">
                             <div class="md:row-span-2">
-                                <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="w-full h-full rounded-[20px] object-cover">
+                                <img src="source/assets/bondhio.jpg" alt="Slide 3" class="w-full h-full rounded-[20px] object-cover">
                             </div>
                             <div class="md:row-span-2">
                                 <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4 drop-shadow-lg"><strong>HOW WE WORK:</strong></h2>
@@ -319,7 +327,7 @@ NATURAL STONE BILL OF DIFFERENT TYPES</p>
                     <div class="flex flex-col bg-[#FAF8F1] mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-34 grid-rows-auto md:grid-rows-2 w-full h-full md:h-[600px]">
                             <div class="row-span-1 md:row-span-2 ">
-                                <img src="https://picsum.photos/1200/600?random=3" alt="Slide 3" class="w-full h-full rounded-[20px] object-cover">
+                                <img src="source/assets/1-2.jpg" alt="Slide 3" class="w-full h-full rounded-[20px] object-cover">
                             </div>
                             <div class="row-span-1 md:row-span-2 flex flex-col justify-center items-start text-start">
                                 <p class="font-sans text-base md:text-xl text-black leading-[24px] md:leading-[30px] mb-4 drop-shadow-md uppercase">
@@ -335,8 +343,10 @@ NATURAL STONE BILL OF DIFFERENT TYPES</p>
                         <div class="flex flex-col w-full bg-(--color-secondary) mt-6 md:mt-[24px] rounded-[20px] p-3 md:p-[48px]">
                             <form action="" class="flex flex-col items-center w-full">
                                 <input type="text" placeholder="Name" class="w-full h-[48px] rounded-[20px] p-[12px] mb-4 md:mb-[24px] bg-white">
-                                <input type="text" placeholder="Phone" class="w-full h-[48px] rounded-[20px] p-[12px] mb-4 md:mb-[24px] bg-white">
-                                <button class="w-full h-[48px] bg-(--color-primary) rounded-[20px] font-oswald text-xl uppercase hover:bg-white/50 transition">Send</button>
+                                <input type="tel" placeholder="Phone" class="w-full h-[48px] rounded-[20px] p-[12px] mb-4 md:mb-[24px] bg-white">
+                                <input type="email" placeholder="Email" class="w-full h-[48px] rounded-[20px] p-[12px] mb-4 md:mb-[24px] bg-white">
+                                <textarea name="" id="" placeholder="Message" class="w-full h-[120px] md:h-[120px] rounded-[20px] p-[12px] mb-4 md:mb-[24px] bg-white"></textarea>
+                                <button type="submit" class="w-full md:w-[200px] h-[48px] bg-(--color-primary) rounded-[20px] font-oswald text-xl uppercase hover:bg-white/50 transition">Send</button>
                             </form>
                         </div>
                     </div>
@@ -344,76 +354,53 @@ NATURAL STONE BILL OF DIFFERENT TYPES</p>
             </div>
         </section>
 
-        <div class="w-full bg-black/90 py-12 px-6 md:px-[48px] text-white">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <!-- Brand -->
-                <div>
-                     <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4">Bond&Hio</h2>
-                     <p class="font-sans text-sm md:text-base text-gray-300">Luxury interiors through modern technologies and natural materials.</p>
-                </div>
-                <!-- Links -->
-                <div>
-                    <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4">Menu</h3>
-                    <ul class="space-y-2 font-sans text-gray-300 text-sm md:text-base">
-                        <li><a href="#" class="hover:text-white transition">Home</a></li>
-                        <li><a href="#benefits" class="hover:text-white transition">Benefits</a></li>
-                        <li><a href="#skills" class="hover:text-white transition">Technologies</a></li>
-                        <li><a href="#how-we-work" class="hover:text-white transition">How we work</a></li>
-                    </ul>
-                </div>
-                <!-- Contact -->
-                <div>
-                     <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4">Contact</h3>
-                     <ul class="space-y-2 font-sans text-gray-300 text-sm md:text-base">
-                        <li>+34 651 18 28 52</li>
-                        <li>bondandhio@gmail.com</li>
-                        <li>C. PREMIO REAL, 18, GIJON</li>
-                     </ul>
-                </div>
-                <!-- Socials -->
-                <div>
-                    <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4">Socials</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition font-sans">Fb</a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition font-sans">ln</a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition font-sans">Tw</a>
-                    </div>
-                </div>
+    </content>
+    <!-- Slider Script -->  
+    <script src="source/js/slider.js"></script>
+
+    <footer id="footer" class="w-full flex justify-center bg-(--color-secondary) text-white mt-[48px] py-[48px]">
+        <div class="w-full max-w-[1170px] px-6 md:px-[48px]">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <!-- Brand -->
+            <div>
+                    <h2 class="font-oswald text-2xl md:text-4xl uppercase mb-4">Bond&Hio</h2>
+                    <p class="font-sans text-sm md:text-base text-gray-300">Luxury interiors through modern technologies and natural materials.</p>
             </div>
-            <!-- Copyright -->
-            <div class="border-t border-white/20 pt-8 text-center font-sans text-sm md:text-base text-gray-400">
-                &copy; 2026 Bond&Hio. All rights reserved.
+            <!-- Links -->
+            <div>
+                <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4">Menu</h3>
+                <ul class="space-y-2 font-sans text-gray-300 text-sm md:text-base">
+                    <li><a href="#" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#benefits" class="hover:text-white transition">Benefits</a></li>
+                    <li><a href="#skills" class="hover:text-white transition">Technologies</a></li>
+                    <li><a href="#how-we-work" class="hover:text-white transition">How we work</a></li>
+                    <li><a href="#footer">Contactos</a></li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div>
+                    <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4">Contact</h3>
+                    <ul class="space-y-2 font-sans text-gray-300 text-sm md:text-base">
+                    <li>+34 651 18 28 52</li>
+                    <li>bondandhio@gmail.com</li>
+                    <li>C. PREMIO REAL, 18, GIJON</li>
+                    </ul>
+            </div>
+            <!-- Socials -->
+            <div>
+                <h3 class="font-oswald text-xl md:text-2xl uppercase mb-4">Socials</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition font-sans">Fb</a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition font-sans">ln</a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition font-sans">Tw</a>
+                </div>
             </div>
         </div>
-
-    </main>
-    <script>
-        const sliderWrapper = document.getElementById('slider-wrapper');
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-
-        // Check if elements exist (in case I commented them out)
-        if (sliderWrapper) {
-            let currentIndex = 0;
-            const slides = sliderWrapper.children;
-            const totalSlides = slides.length;
-
-            // Since it's a loop with cloned slides, effective slides are total / 2
-            const effectiveSlides = totalSlides / 2;
-
-            function updateSlider() {
-                // For simplicity, just translate full width * index
-                // Note: This logic might need refinement for seamless infinite loop if requested,
-                // but the prompt is about languages now. I'll keep the basic auto-scroll behavior.
-                sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
-
-            // Simple auto-play
-            setInterval(() => {
-                currentIndex = (currentIndex + 1) % effectiveSlides; // Cycle through first set
-                 updateSlider();
-            }, 3000);
-        }
-    </script>
+        <!-- Copyright -->
+        <div class="border-t border-white/20 pt-8 text-center font-sans text-sm md:text-base text-gray-400">
+            &copy; 2026 Bond&Hio. All rights reserved.
+        </div>
+        </div>
+    </footer>
 </body>
 </html>

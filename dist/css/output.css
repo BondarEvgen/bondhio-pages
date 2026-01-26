@@ -547,6 +547,9 @@
       background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
     }
   }
+  .object-contain {
+    object-fit: contain;
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -857,6 +860,21 @@
       height: 48px;
     }
   }
+  .md\:h-\[120px\] {
+    @media (width >= 48rem) {
+      height: 120px;
+    }
+  }
+  .md\:h-\[400px\] {
+    @media (width >= 48rem) {
+      height: 400px;
+    }
+  }
+  .md\:h-\[500px\] {
+    @media (width >= 48rem) {
+      height: 500px;
+    }
+  }
   .md\:h-\[550px\] {
     @media (width >= 48rem) {
       height: 550px;
@@ -877,24 +895,9 @@
       height: 100%;
     }
   }
-  .md\:min-h-\[400px\] {
+  .md\:min-h-\[500px\] {
     @media (width >= 48rem) {
-      min-height: 400px;
-    }
-  }
-  .md\:min-h-\[600\] {
-    @media (width >= 48rem) {
-      min-height: 600;
-    }
-  }
-  .md\:min-h-\[600px\] {
-    @media (width >= 48rem) {
-      min-height: 600px;
-    }
-  }
-  .md\:min-h-\[900\] {
-    @media (width >= 48rem) {
-      min-height: 900;
+      min-height: 500px;
     }
   }
   .md\:min-h-\[900px\] {
